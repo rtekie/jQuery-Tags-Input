@@ -187,6 +187,7 @@
       'unique':true,
       removeWithBackspace:true,
       placeholderColor:'#666666',
+      inputColor:'#000000',
       autosize: true,
       comfortZone: 20,
       inputPadding: 6*2
@@ -248,7 +249,7 @@
 					if ($(event.data.fake_input).val()==$(event.data.fake_input).attr('data-default')) { 
 						$(event.data.fake_input).val('');
 					}
-					$(event.data.fake_input).css('color','#000000');		
+					$(event.data.fake_input).css('color', settings.inputColor);		
 				});
 						
 				if (settings.autocomplete_url != undefined) {
